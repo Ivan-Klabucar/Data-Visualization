@@ -1,0 +1,43 @@
+.container {
+    display: table-cell;
+    vertical-align:top;
+    height: 500px;
+    padding: 10px;
+    border: 0px solid black;
+    text-align: center;
+    font-size: large;
+}
+
+.scatter-container {
+    text-align: center;
+    font-size: large;
+    margin-right: 350px;
+}
+
+path {
+    stroke: black;
+    stroke-width: 1px;
+    fill: white;
+    opacity: 1;
+}
+
+.tooltip {
+    position: absolute;
+    opacity: 0.8;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.highlight-encircle {
+    stroke: black;
+}
+
+rect {
+    fill: #6495ed
+}
+
+circle {
+    fill: #6495ed;
+    opacity: 0.6
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vizualizacija podataka (VIZPOD) 2023/2024 Laboratorijska vježba 1</title>
+        <link rel="stylesheet" href="static/styles/style.css">
+        <link rel="shortcut icon" href="static/favicon.ico">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    </head>
+    <body>
+        <h2>Palmer Penguins Dataset</h2>
+        <p>Downloaded at <a href="https://www.kaggle.com/datasets/ashkhagan/palmer-penguins-datasetalternative-iris-dataset">Palmer Penguins dataset.</a> Data was cleaned by removing rows with missing values.
+        <br>JMBAG: 0036513702 Ime i Prezime: Ivan Klabučar</p>      
+        <div class="scatter-container" id="svg_scatterplot">
+            <p>Body mass (x axis [g]) - flipper length (y axis [mm])</p>
+        </div>
+        <div class="container" id="svg_species_bar">
+            <p>Count of Species</p>
+        </div>
+        <div class="container" id="svg_sex_bar">
+            <p>Count of Sex</p>
+        </div>
+        <div class="container" id="svg_island_bar">
+            <p>Count of Island of Origin</p>
+        </div>
+        
+
+        <script src="static/js/plot_species.js"></script>
+        <script src="static/js/plot_sex.js"></script>
+        <script src="static/js/plot_island.js"></script>
+        <script src="static/js/plot_scatterplot.js"></script>
+        <script>
+            plotScatterplot();
+            plotSpecies();
+            plotSex();
+            plotIsland();
+        </script>
+    </body>
+</html>
